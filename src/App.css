@@ -7,11 +7,6 @@
 }
 
 .search-button{
-  background: #d26c22;
-  border-color: #d26c22;
-}
-
-.clear-button{
-  background: #22a3d2;
-  border-color: #22a3d2;
+  background: #d26c22 !important;
+  border-color: #d26c22 !important;
 }

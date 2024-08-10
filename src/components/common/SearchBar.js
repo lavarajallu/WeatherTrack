@@ -9,15 +9,15 @@ const SearchBar = ({ value, onChange, onSubmit, onClear }) => (
       type='text'
       value={value}
       onChange={onChange}
+      onKeyDown={(event) => event.key === 'Enter' && onSubmit()}
       placeholder={weatherTextInfo.enter_city_name}
     />
     <Button className='search-button' onClick={onSubmit}>
-      <i className='fas fa-search'></i>
-      {weatherTextInfo.search}
+      <i className='fas fa-search'></i> {weatherTextInfo.search}
     </Button>
     {value && (
-      <Button color='secondary' onClick={onClear} className='clear-button'>
-        <i className='fas fa-clear'></i> {weatherTextInfo.clear}
+      <Button onClick={onClear} className='clear-button' disabled={!value}>
+        <i className='fas fa-times'></i> {weatherTextInfo.clear}
       </Button>
     )}
   </InputGroup>

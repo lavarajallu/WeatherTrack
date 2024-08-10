@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Design Screen shot
 
-![Weather 5 days forecast report](<Screenshot 2024-08-10 at 3.11.08 PM.png>)
+![Weather 5 days forecast report](weather_track.png)
