@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Design Screen shot
 
-![Weather 5 days forecast report](weather_track.png)
+![Visakhapatnam City 5 days Weather report](weather_track_view.png)

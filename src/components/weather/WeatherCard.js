@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardTitle, Table } from 'reactstrap';
-import './WeatherCard.css'; // Import the CSS file
+import './WeatherCard.css';
 
 const WeatherCard = ({ date, minTemp, maxTemp, pressure, humidity }) => (
   <div className='mb-1'>
@@ -11,15 +11,17 @@ const WeatherCard = ({ date, minTemp, maxTemp, pressure, humidity }) => (
       <Table bordered>
         <tbody>
           <tr className='temperature-row'>
-            <th colSpan='2'>Temperature</th>
+            <th colSpan='2' className='temp-background'>
+              Temperature
+            </th>
           </tr>
           <tr className='text-center'>
-            <td>Min</td>
-            <td>Max</td>
+            <td className='temp-background'>Min</td>
+            <td className='temp-background'>Max</td>
           </tr>
           <tr className='text-center'>
-            <td>{minTemp} °C</td>
-            <td>{maxTemp} °C</td>
+            <td className='temp-background'>{minTemp} °C</td>
+            <td className='temp-background'>{maxTemp} °C</td>
           </tr>
           <tr>
             <td className='text-center'>Pressure</td>
