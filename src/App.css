@@ -2,22 +2,16 @@
   max-width: 960px;
 }
 
-.mb-3, .mt-5, .text-center, .mb-4 {
-  margin-bottom: 1rem !important;
-  margin-top: 3rem !important;
-  text-align: center !important;
-}
-
 .header-text{
   color:#d26c22;
 }
 
 .search-button{
-  background-color: #d26c22;
+  background: #d26c22;
   border-color: #d26c22;
 }
 
 .clear-button{
-  background-color: #22a3d2;
+  background: #22a3d2;
   border-color: #22a3d2;
 }

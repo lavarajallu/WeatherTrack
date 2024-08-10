@@ -19,7 +19,7 @@ export const getWeatherData = async (cityName) => {
       throw new Error('No weather data available.');
     }
 
-    return data.list
+    return data?.list
       .filter((_, index) => index % 8 === 0) // Adjust as needed
       .map((item) => ({
         date: new Date(item.dt_txt).toLocaleDateString(),

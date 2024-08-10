@@ -1,0 +1,14 @@
+.weather-card-title {
+    background-color: #ff6600;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .temperature-row {
+    background-color: #d3d3d3;
+    text-align: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }

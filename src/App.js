@@ -34,11 +34,15 @@ const App = () => {
     setHasSearched(false); // Reset search status
   };
 
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   return (
     <div className='container mt-5'>
       <h1 className='text-center mb-4 header-text'>
         {weatherTextInfo.weather_Info_Text_Header}{' '}
-        <span>{hasSearched && city}</span>
+        <span>{hasSearched && capitalizeFirstLetter(city)}</span>
       </h1>
       <SearchBar
         value={city}

@@ -9,7 +9,7 @@ const useWeatherData = (cityName, shouldFetch) => {
   useEffect(() => {
     if (shouldFetch && cityName.length >= 3) {
       setLoading(true);
-      setError(null); // Clear any previous error
+      setError(null);
 
       getWeatherData(cityName)
         .then((data) => setWeatherData(data))

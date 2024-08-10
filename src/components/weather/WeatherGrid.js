@@ -5,7 +5,7 @@ import WeatherCard from './WeatherCard';
 const WeatherGrid = ({ weatherData }) => (
   <Row>
     {weatherData?.map((dayData, index) => (
-      <Col md='3' lg='3' key={index} className='d-flex'>
+      <Col md='4' lg='3' key={index}>
         <WeatherCard {...dayData} />
       </Col>
     ))}
